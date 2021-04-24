@@ -1,0 +1,106 @@
+$blackColor: #242424;
+$yellowColor: rgb(255, 245, 104);
+
+//tetris styles
+#gamefield {
+  background-color: #ffffff9a;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.103);
+}
+
+.w-60{
+  width: 60%;
+}
+
+#start-button {
+  padding: 0.25rem;
+  background-color: $blackColor;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  width: 160px;
+  height: 50px;
+  outline: none;
+  font-size: 1rem;
+
+  &:hover {
+    //border: 1px solid black;
+  }
+}
+#score {
+  color: $blackColor;
+}
+
+.tetris-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.mini-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border: 1px solid black;*/
+}
+
+.grid {
+  box-sizing: content-box;
+  border: 1px solid $blackColor;
+
+  width: 300px;
+  height: 600px;
+  background-color: $blackColor;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  div {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.mini-grid {
+  box-sizing: content-box;
+  border: 2px solid $blackColor;
+
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $blackColor;
+
+  div {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.tetromino {
+  background-color: $yellowColor;
+}
+#highscore > p {
+  color: $blackColor;
+  font-size: 1.5rem;
+}
+#tetris-wrapper {
+  background-color: #f7f7f8;
+  background-image: url(svg/tetris-page-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

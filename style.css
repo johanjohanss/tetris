@@ -1,0 +1,128 @@
+#gamefield {
+  background-color: #ffffff9a;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.103);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.103);
+}
+
+.w-60 {
+  width: 60%;
+}
+
+#start-button {
+  padding: 0.25rem;
+  background-color: #242424;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  width: 160px;
+  height: 50px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#score {
+  color: #242424;
+}
+
+.tetris-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.mini-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*border: 1px solid black;*/
+}
+
+.grid {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 1px solid #242424;
+  width: 300px;
+  height: 600px;
+  background-color: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid div {
+  height: 30px;
+  width: 30px;
+}
+
+.mini-grid {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 2px solid #242424;
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #242424;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: #fff568;
+}
+
+#highscore > p {
+  color: #242424;
+  font-size: 1.5rem;
+}
+
+#tetris-wrapper {
+  background-color: #f7f7f8;
+  background-image: url(svg/tetris-page-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

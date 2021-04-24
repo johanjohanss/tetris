@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tetris</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+      <div id="tetris-wrapper">
+        <main
+          class="d-flex justify-content-center align-items-center flex-column m-0 p-0"
+        >
+          <!--<h1>TETRIS</h1>-->
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="col-md-12 d-flex justify-content-center align-items-center"
+              ></div>
+            </div>
+          </div>
+          
+          <div id="gamefield">
+            
+            <button class="mb-3" id="start-button" type="button">
+              Start/Pause
+            </button>
+            <h4 class="text-dark mb-3">SCORE: <span id="score">0</span></h4>
+            <div class="tetris-container row">
+              <div class="grid"></div>
+              <div class="mini-container">
+                <div class="mini-grid"></div>
+                <h5 class="text-dark pl-3 pt-2">NEXT</h5>
+              </div>
+            </div>
+            <div class="text-dark" id="highscore"></div>
+          </div>
+          
+        </main>
+        <audio id="soundtrack" src="audio/tetrisdark.mp3" loop></audio>
+      </div>
+      
+    </div>
+    
+  </body>
+  <script src="script.js"></script>
+</html>
+
+<!--
+
+    <!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tetris</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/newstyle.css" />
+  </head>
+  <body data-barba="wrapper" class="">
+    <div
+      class="animation-wrapper"
+      data-barba="container"
+      data-barba-namespace="project-tetris"
+    >
+      <div id="tetris-wrapper">
+        <a href="../index.html"
+          ><svg
+            id="backarrow"
+            class="text-dark"
+            width="3%"
+            viewBox="0 0 16 16"
+            class="bi bi-arrow-left-square-fill"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm9.5 8.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"
+            />
+          </svg>
+        </a>
+        <main class="d-flex justify-content-center align-items-center m-0 p-0">
+          
+          <div id="gamefield">
+            <button class="mb-4" id="start-button" type="button">
+              Start/Pause
+            </button>
+            <h4 class="text-dark mb-3">SCORE: <span id="score">0</span></h4>
+            <div class="tetris-container">
+              <div class="grid"></div>
+              <div class="mini-container">
+                <div class="mini-grid"></div>
+                <h5 class="text-dark pl-3 pt-2">NEXT</h5>
+              </div>
+            </div>
+            <div class="text-dark" id="highscore"></div>
+          </div>
+        </main>
+        <audio id="soundtrack" src="../audio/tetrisdark.mp3" loop></audio>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="../scripts/animation.js"></script>
+</html>
+
+
+  -->
